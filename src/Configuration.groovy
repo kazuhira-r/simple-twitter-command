@@ -32,6 +32,7 @@ class Configuration {
   static def newTwitter() {
     enabledProxyIfNeeded()
 
+    /*
     def configurationBuilder = new ConfigurationBuilder();
 
     configurationBuilder
@@ -41,6 +42,8 @@ class Configuration {
       .setOAuthAccessTokenSecret(oauthKeys.accessTokenSecret)
 
     def twitterFactory = new TwitterFactory(configurationBuilder.build())
+    */
+    def twitterFactory = new TwitterFactory()
     twitterFactory.getInstance()
   }
 }
