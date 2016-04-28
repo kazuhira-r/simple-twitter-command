@@ -8,7 +8,7 @@ import twitter4j.StatusUpdate
 
 def targetStatusId = 
 
-def targetIds
+def targetIds = ''
 
 def tweet = """\
 ${targetIds ? targetIds + ' ' : ''}
