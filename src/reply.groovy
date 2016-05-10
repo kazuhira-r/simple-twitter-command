@@ -10,8 +10,12 @@ def targetStatusId =
 
 def targetIds = ''
 
+def replyText = """\
+
+""".trim()
+
 def tweet = """\
-${targetIds ? targetIds + ' ' : ''}
+${targetIds ? targetIds + ' ' : ''}${replyText}
 """.trim()
 
 def now = LocalDateTime.now()
