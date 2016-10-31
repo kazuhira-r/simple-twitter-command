@@ -2,6 +2,8 @@
 import twitter4j.TwitterFactory
 import twitter4j.conf.ConfigurationBuilder
 
+import twitter4j.Query
+
 class Configuration {
   static def oauthKeys = [
     consumerKey: "",
@@ -45,5 +47,9 @@ class Configuration {
     */
     def twitterFactory = new TwitterFactory()
     twitterFactory.getInstance()
+  }
+
+  static def newQuery(queryString) {
+    new Query(queryString)
   }
 }
