@@ -9,7 +9,7 @@ def tweet = '''\
 
 def now = LocalDateTime.now()
 
-def twitter = Configuration.newTwitter()
+def twitter = TwitterService.newTwitter()
 
 def status = twitter.updateStatus(tweet)
 

@@ -4,7 +4,7 @@ import twitter4j.conf.ConfigurationBuilder
 
 import twitter4j.Query
 
-class Configuration {
+class TwitterService {
   static def oauthKeys = [
     consumerKey: "",
     consumerSecret: "",

@@ -5,7 +5,7 @@ if (args.size() > 0) {
   screenName = args[0]
 }
 
-def twitter = Configuration.newTwitter()
+def twitter = TwitterService.newTwitter()
 
 def userTimeline
 if (screenName) {

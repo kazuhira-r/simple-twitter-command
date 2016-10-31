@@ -1,6 +1,6 @@
 // リプライ
 
-def twitter = Configuration.newTwitter()
+def twitter = TwitterService.newTwitter()
 
 twitter.mentionsTimeline.each { status ->
   println('==================================================================')

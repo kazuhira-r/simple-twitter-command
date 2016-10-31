@@ -20,7 +20,7 @@ ${targetIds ? targetIds + ' ' : ''}${replyText}
 
 def now = LocalDateTime.now()
 
-def twitter = Configuration.newTwitter()
+def twitter = TwitterService.newTwitter()
 
 def statusUpdate = new StatusUpdate(tweet)
 statusUpdate.inReplyToStatusId = targetStatusId
