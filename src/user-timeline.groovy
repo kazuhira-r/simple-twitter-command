@@ -1,4 +1,4 @@
-// タイムライン
+// ユーザータイムライン
 
 def screenName
 if (args.size() > 0) {
