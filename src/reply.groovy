@@ -3,7 +3,7 @@
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
-@Grab('org.twitter4j:twitter4j-core:4.0.4')
+@Grab('org.twitter4j:twitter4j-core:4.0.5')
 import twitter4j.StatusUpdate
 
 def targetStatusId = 
