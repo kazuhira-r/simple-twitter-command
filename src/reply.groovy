@@ -3,9 +3,6 @@
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
-@Grab('org.twitter4j:twitter4j-core:4.0.5')
-import twitter4j.StatusUpdate
-
 def targetStatusId = 
 
 def targetIds = ''
@@ -22,7 +19,7 @@ def now = LocalDateTime.now()
 
 def twitter = TwitterService.newTwitter()
 
-def statusUpdate = new StatusUpdate(tweet)
+def statusUpdate = TwitterService.newStatusUpdate(tweet)
 statusUpdate.inReplyToStatusId = targetStatusId
 
 def status = twitter.updateStatus(statusUpdate)

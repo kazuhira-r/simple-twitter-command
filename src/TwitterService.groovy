@@ -1,8 +1,8 @@
 @Grab('org.twitter4j:twitter4j-core:4.0.5')
+import twitter4j.Query
+import twitter4j.StatusUpdate
 import twitter4j.TwitterFactory
 import twitter4j.conf.ConfigurationBuilder
-
-import twitter4j.Query
 
 class TwitterService {
   static def oauthKeys = [
@@ -47,6 +47,10 @@ class TwitterService {
     */
     def twitterFactory = new TwitterFactory()
     twitterFactory.getInstance()
+  }
+
+  static def newStatusUpdate(tweet) {
+    new StatusUpdate(tweet)
   }
 
   static def newQuery(queryString) {
